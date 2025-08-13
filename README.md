@@ -1,5 +1,16 @@
 # dynamic-H1-replacement
-Yes, this code dynamically replaces the h1 heading on the page based on the keyword passed in the URL. For example, if the URL contains the parameter ?utm_term=delivery, the h1 heading will change to "delivery". 
-Google Sheets - https://docs.google.com/spreadsheets/d/1ZeJ_G0ilwsE55997lBeBQQgUS-rxt3ZNSm-cFQCSIps/edit?gid=0#gid=0 .
-Create in GTM variable - {{ Url - ps_term }}, Type - Query, Key - ps_term .
-Create trigger - PW - URL - ps_term not undefined .
+Этот код динамически заменяет заголовок h1 на странице сайта на основе ключевого слова, переданного в URL.
+
+Например, если URL содержит параметр ?utm_term=delivery, заголовок h1 изменится на «Delivery». 
+
+Заголовки можно создать в таблице.
+Пример таблицы: Google Sheets — https://docs.google.com/spreadsheets/d/1ZeJ_G0ilwsE55997lBeBQQgUS-rxt3ZNSm-cFQCSIps/edit?gid=0#gid=0 .
+
+## Импортируйте JSON (import_to_GTM) в GTM, замените measurement id в теге.
+
+Импортирует:
+* Тег cHTML - Dynamic H1 replacement
+* Триггер PW - URL - ps_term not undefined
+* Переменную - Url - ps_term
+
+Необходимо заменить в cHTML - Dynamic H1 replacement заголовки в var keywords.
